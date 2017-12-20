@@ -82,16 +82,17 @@ public class FoodNutritionDeleteFragment extends Fragment {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                LayoutInflater inflater = getActivity().getLayoutInflater();
+                final View promptsView = inflater.inflate(R.layout.food_nutrition_custom_dialog, null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(foodNutrition);
-
-                builder.setMessage("Delete the record")
+                builder.setView(promptsView)
                         .setTitle(R.string.delete)
                         .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 if(foodNutrition != null){
                                     dbHelper.deleteRecordById(_id);
-                                    foodNutrition.returnToAdd();
+                                    foodNutrition.onFragmentInteraction();
                                 }
 
                             }
@@ -100,8 +101,7 @@ public class FoodNutritionDeleteFragment extends Fragment {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User cancelled the dialog
                             }
-                        })
-                        .show();
+                        }).create().show();
 
             }
         });

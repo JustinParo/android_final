@@ -61,16 +61,6 @@ public class FoodNutritionActivity extends AppCompatActivity implements FoodNutr
 
     }
 
-    public void addFoodNutritionInformation(){
-        FoodNutritionInformationAddFragment addInfo = new FoodNutritionInformationAddFragment(this);
-        addInfo.setArguments(getIntent().getExtras());
-
-        // Add the fragment to the 'fragment_container' FrameLayout
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_window, addInfo).commit();
-
-    }
-
 
     public void returnToAdd(){
         FoodNutritionInformationAddFragment addInfo = new FoodNutritionInformationAddFragment(this);
