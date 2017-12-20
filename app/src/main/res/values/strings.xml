@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Project Assignment</string>
+    <string name="item_01">Activity Tracking</string>
+    <string name="item_02">Food Nutrition</string>
+    <string name="item_03">House Thermostat</string>
+    <string name="item_04">Automobile</string>
+    <string name="activity_id">Id</string>
+    <string name="activity_type">Type</string>
+    <string name="activity_duration">Duration (Minutes)</string>
+    <string name="date_created">Date</string>
+    <string name="activity_comment">Comment</string>
+    <string-array name="activityType">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Biking</item>
+        <item>Swimming</item>
+        <item>Skating</item>
+    </string-array>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="alertDialog_message">Do you want to delete?</string>
+    <string name="alertDialog_activity_help">Activity Tracking Help</string>
+    <string name="alertDialog_activity_help_message">
+        \tAuthor: Tingting Liu \n
+        \tVersion: 1.0.0.0\n
+\t1.	Press the \"+\" button at the right corner of screen, you can enter a new activity you had completed.\n
+        \t2.       Press the "Delete" button at the top of screen, you can delete multiple activities.\n
+        \t3.       Press the "Summary" button at the top of screen, a window will show up that listed the total minutes of activity the user does per month, and the total activity the user did last month.\n
+\t4.	You can choose one activity from the drop down list for the \"Type\".\n
+\t5.	Pressed the "Submit" button at the bottom of the screen,the activity you just entered will be shown on the screen.\n
+\t6.	Click each activity, the detailed information will be shown on the screen.\n
+\t7.	You can update or delete this activity by clicking the buttons (\"Update\", \"Delete\") on the bottom of the screen.\n
+
+</string>
+    <string name="delete">Delete</string>
+    <string name="summary">Summary</string>
+    <string name="help">Help</string>
+    <string name="del">Delete</string>
+    <string name="update">Update</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="name">Project</string>
+    <string name="TransFail">Transaction Failed!</string>
+    <string name="TransSuc">Transaction executed successfully!</string>
+    <string name="updateDuration">Original duration is updated to</string>
+    <string name="minutes">minutes</string>
+</resources>

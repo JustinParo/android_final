@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小组作业</string>
+    <string name="item_01">运动记录</string>
+    <string name="item_02">热量摄入追踪</string>
+    <string name="item_03">家庭温度控制器</string>
+    <string name="item_04">汽车</string>
+    <string name="activity_id">序号</string>
+    <string name="activity_type">类型</string>
+    <string name="activity_duration">时间(分钟)</string>
+    <string name="date_created">日期</string>
+    <string name="activity_comment">备注</string>
+    <string-array name="activityType">
+        <item>跑步</item>
+        <item>走路</item>
+        <item>骑自行车</item>
+        <item>游泳</item>
+        <item>滑冰</item>
+    </string-array>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="alertDialog_message">确定要删除吗？</string>
+    <string name="alertDialog_activity_help">帮助</string>
+    <string name="alertDialog_activity_help_message">
+        \tAuthor: Tingting Liu \n
+        \tVersion: 1.0.0.0\n
+
+        \t1.     按屏幕右上角的\"+ \"按钮，您可以输入已经完成的新活动。\n
+\t2. 按屏幕顶部的“删除”按钮，可以删除多个活动。\n
+\t3. 按屏幕顶部的“摘要”按钮，将出现一个窗口，列出用户每月的活动总分钟数以及用户上个月的总活动。\n
+\t4. 您可以从“类型”下拉列表中选择一项活动。\n
+\t5. 按下屏幕底部的“提交”按钮，刚刚输入的活动将显示在屏幕上。\n
+\t6. 点击每个活动，详细信息将显示在屏幕上。\n
+\t7. 您可以通过单击屏幕底部的按钮（\“更新\”，\“删除\”）来更新或删除此活动。
+
+
+
+</string>
+    <string name="delete">删除</string>
+    <string name="summary">汇总</string>
+    <string name="help">帮助</string>
+    <string name="del">删除</string>
+    <string name="update">更新</string>
+    <string name="reset">重置</string>
+    <string name="submit">新建</string>
+    <string name="name">小组作业</string>
+    <string name="TransFail">操作失败!</string>
+    <string name="TransSuc">操作成功!</string>
+    <string name="updateDuration">更新时间至</string>
+    <string name="minutes">分钟</string>
+</resources>
