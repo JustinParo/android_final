@@ -1,5 +1,6 @@
 package com.tingtingliu.projectassignment;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import com.tingtingliu.projectassignment.ActivityTracking.ActivityTrackingDetailFragment;
 import com.tingtingliu.projectassignment.ActivityTracking.ActivityTrackingListFragment;
+import com.tingtingliu.projectassignment.foodnutrition.FoodNutritionActivity;
 
 public class MainActivity extends AppCompatActivity implements ActivityTrackingListFragment.OnHeadlineSelectedListener {
     Snackbar bar;
@@ -43,7 +45,8 @@ public class MainActivity extends AppCompatActivity implements ActivityTrackingL
                             .make(coordinatorLayoutView, R.string.item_01, Snackbar.LENGTH_LONG);
                     bar.show();
                 } else if (menuItemId == R.id.action_item2) {
-                    Toast.makeText(MainActivity.this, R.string.item_02, Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, FoodNutritionActivity.class);
+                    startActivity(intent);
 
                 } else if (menuItemId == R.id.action_item3) {
                     Toast.makeText(MainActivity.this, R.string.item_03, Toast.LENGTH_SHORT).show();

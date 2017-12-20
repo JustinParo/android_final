@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="82dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Food"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="What you eat?"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Carbon"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="total carbon"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_carbon"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Fat"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="total fat"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_fat"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calorie"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="calorie"
+            android:layout_height="wrap_content"
+            android:id="@+id/calorie"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="date"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Food"
+            android:id="@+id/addFoodNutrition"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/cancel"/>
+    </LinearLayout>
+</LinearLayout>

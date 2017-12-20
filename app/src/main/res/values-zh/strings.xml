@@ -48,4 +48,15 @@
     <string name="TransSuc">操作成功!</string>
     <string name="updateDuration">更新时间至</string>
     <string name="minutes">分钟</string>
+
+    <!-- xiaoyu  -->
+    <string name="alertDialog_food_nutri_help">卡路里助手</string>
+    <string name="alertDialog_food_nutri_help_message">
+        \tAuthor: Xiaoyu Wang \n
+        \tVersion: 1.0.0.0\n
+
+        \t1.    请输入您的吃的食物信息， 并提交。 我们的软件应用可以帮您记录和计算每天摄入的卡路里。
+    </string>
+    <string name="perday">历史平均卡路里摄入</string>
+    <string name="lastday">最后平均卡路里摄入</string>
 </resources>
