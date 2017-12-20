@@ -58,4 +58,14 @@
     </string>
     <string name="perday">Average calorie per day you gain</string>
     <string name="lastday">Average calorie last day you gain</string>
+    <string name="snack">SNACK</string>
+    <string name="food">Food</string>
+    <string name="total_carbon">Total Carbon</string>
+    <string name="total_fat">Total Fat</string>
+    <string name="calorie">Calorie</string>
+    <string name="date">Date</string>
+    <string name="add_food">Add Food</string>
+    <string name="calculate">Calculate</string>
+
+
 </resources>

@@ -11,7 +11,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Food"/>
+            android:text="@string/food"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Total Carbon"
+            android:text="@string/total_carbon"
             />
         <TextView
             android:layout_width="0dp"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Total Fat"
+            android:text="@string/total_fat"
             />
         <TextView
             android:layout_width="0dp"
@@ -62,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Calorie"
+            android:text="@string/calorie"
             />
         <TextView
             android:layout_width="0dp"
@@ -80,7 +80,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Date"
+            android:text="@string/date"
             />
         <TextView
             android:layout_width="0dp"
@@ -97,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Delete"
+            android:text="@string/delete"
             android:id="@+id/deleteFoodNutrition"/>
     </LinearLayout>
 

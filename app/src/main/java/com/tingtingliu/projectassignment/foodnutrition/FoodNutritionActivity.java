@@ -26,7 +26,7 @@ public class FoodNutritionActivity extends AppCompatActivity implements FoodNutr
         setContentView(R.layout.food_nutrition_activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setLogo(R.mipmap.ic_launcher1);
-        toolbar.setTitle("Project Assignment");
+        toolbar.setTitle(R.string.name);
         toolbar.setSubtitle("Food Nutrition by Xiaoyu Wang");
         toolbar.inflateMenu(R.menu.food_nutrition_menu);
 
