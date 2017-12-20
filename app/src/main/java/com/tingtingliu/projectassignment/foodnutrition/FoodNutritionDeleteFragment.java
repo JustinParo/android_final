@@ -86,8 +86,8 @@ public class FoodNutritionDeleteFragment extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(foodNutrition);
 
                 builder.setMessage("Delete the record")
-                        .setTitle("Delete")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        .setTitle(R.string.delete)
+                        .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 if(foodNutrition != null){
                                     dbHelper.deleteRecordById(_id);
@@ -96,7 +96,7 @@ public class FoodNutritionDeleteFragment extends Fragment {
 
                             }
                         })
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User cancelled the dialog
                             }
