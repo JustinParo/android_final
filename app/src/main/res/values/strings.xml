@@ -67,5 +67,17 @@
     <string name="add_food">Add Food</string>
     <string name="calculate">Calculate</string>
 
+    <!-- Automobile -->
+    <string name="aRecords">Records</string>
+    <string name="aStatistics">Statistics</string>
+    <string name="aHelp">Help</string>
+
+    <string name="literLabel">Liters:</string>
+    <string name="priceLabel">Price:</string>
+    <string name="kmLabel">Kilometers:</string>
+
+    <string name="aRecordButton">Record</string>
+    <string name="aResetButton">Reset</string>
+    <string name="aCancelButton">Cancel</string>
 
 </resources>

@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.tingtingliu.projectassignment.ActivityTracking.ActivityTrackingDetailFragment;
 import com.tingtingliu.projectassignment.ActivityTracking.ActivityTrackingListFragment;
+import com.tingtingliu.projectassignment.Automobile.AutomobileActivity;
 import com.tingtingliu.projectassignment.foodnutrition.FoodNutritionActivity;
 
 public class MainActivity extends AppCompatActivity implements ActivityTrackingListFragment.OnHeadlineSelectedListener {
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements ActivityTrackingL
 
                 } else if (menuItemId == R.id.action_item4) {
                     Toast.makeText(MainActivity.this, R.string.item_04, Toast.LENGTH_SHORT).show();
+                    Intent AutomobileIntent = new Intent(MainActivity.this, AutomobileActivity.class);
+                    startActivity(AutomobileIntent);
                 }
                 return true;
             }

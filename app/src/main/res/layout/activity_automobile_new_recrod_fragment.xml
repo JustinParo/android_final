@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Automobile.AutomobileNewRecordFragment">
+
+    <RelativeLayout
+        android:id="@+id/literContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/litersLabel"
+            android:text="@string/literLabel"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/litersText"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/priceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/literContainer">
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:text="@string/priceLabel"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/priceText"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kmContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/priceContainer">
+
+        <TextView
+            android:id="@+id/kmLabel"
+            android:text="@string/kmLabel"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/kmText"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/aRecordButton"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="@string/aRecordButton"/>
+
+        <Button
+            android:id="@+id/aResetButton"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="@string/aResetButton"/>
+
+        <Button
+            android:id="@+id/aCancelButton"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="@string/aCancelButton"/>
+    </LinearLayout>
+
+</RelativeLayout>
