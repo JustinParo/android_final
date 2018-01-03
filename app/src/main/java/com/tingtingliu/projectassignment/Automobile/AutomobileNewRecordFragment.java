@@ -43,15 +43,14 @@ public class AutomobileNewRecordFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Boolean recordCheck = false;
-                Log.i("LITERS", liters.toString());
+                //TODO: check inputs
                 if (liters.toString() == null || liters.toString() == "0") {
                     Toast.makeText(ctx, "Please Enter Liters", Toast.LENGTH_SHORT).show();
                 } else if (price.toString() == null) {
-                    Toast.makeText(ctx, "Please Enter Liters", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, "Please Enter Price", Toast.LENGTH_SHORT).show();
                 } else if (km.toString() == null) {
-                    Toast.makeText(ctx, "Please Enter Liters", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ctx, "Please Enter km", Toast.LENGTH_SHORT).show();
                 } else {
-                    Log.i("LITERS", liters.toString());
                     ((AutomobileActivity)getActivity()).setButtonVisible();
                     aDatabaseAdapter.createRecord(liters.getText().toString(),
                             price.getText().toString(),

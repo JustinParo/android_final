@@ -1,6 +1,7 @@
 package com.tingtingliu.projectassignment.Automobile;
 
 import java.sql.Date;
+import java.sql.Time;
 
 /**
  * Created by justinparo on 2017-12-29.
@@ -10,6 +11,10 @@ public class AutomobileRecord {
 
     private Integer id, liters, price, km, date;
     //private Date date;
+
+    public AutomobileRecord() {
+        //Empty Constructor
+    }
 
     public AutomobileRecord(Integer id, Integer liters, Integer price, Integer km, Integer date) {
         this.id = id;
@@ -26,7 +31,7 @@ public class AutomobileRecord {
     }
 
     public Integer getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Integer id) {
@@ -34,7 +39,7 @@ public class AutomobileRecord {
     }
 
     public Integer getLiters() {
-        return liters;
+        return this.liters;
     }
 
     public void setLiters(Integer liters) {
@@ -42,7 +47,7 @@ public class AutomobileRecord {
     }
 
     public Integer getPrice() {
-        return price;
+        return this.price;
     }
 
     public void setPrice(Integer price) {
@@ -50,7 +55,7 @@ public class AutomobileRecord {
     }
 
     public Integer getKm() {
-        return km;
+        return this.km;
     }
 
     public void setKm(Integer km) {
@@ -58,7 +63,7 @@ public class AutomobileRecord {
     }
 
     public Integer getDate() {
-        return date;
+        return this.date;
     }
 
     public void setDate(Integer date) {

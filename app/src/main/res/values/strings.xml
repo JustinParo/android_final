@@ -68,6 +68,7 @@
     <string name="calculate">Calculate</string>
 
     <!-- Automobile -->
+    <string name="aHome">Home</string>
     <string name="aRecords">Records</string>
     <string name="aStatistics">Statistics</string>
     <string name="aHelp">Help</string>
@@ -75,9 +76,34 @@
     <string name="literLabel">Liters:</string>
     <string name="priceLabel">Price:</string>
     <string name="kmLabel">Kilometers:</string>
+    <string name="dateLabel">Month:</string>
 
     <string name="aRecordButton">Record</string>
     <string name="aResetButton">Reset</string>
     <string name="aCancelButton">Cancel</string>
+
+    <string name="aBackButton">Back</string>
+    <string name="aDeleteButton">Delete</string>
+
+    <string name="customDialogMessage">Are you sure you want to delete this record?</string>
+    <string name="aCustomPositive">Yes</string>
+    <string name="aCustomNegative">No</string>
+
+    <string name="averagesTitle">Averages</string>
+    <string name="totalsTitle">Totals</string>
+    <string name="lastMonth">Last Month:</string>
+    <string name="perMonth">Per Month:</string>
+
+    <string name="aHelpMenuTitle">Getting Started: Guide</string>
+    <string name="aHelpMenuText">
+        \t Author: Justin Paro \n
+        \t Version: 2.0 \n
+
+        \t1. Home, Records, and Statistics are the 3 main screens of the app. \n
+        \t2. Press the plus button on the bottom right of the screen to add a new record. \n
+        \t3. You can select each record and Delete it. \n
+        \t4. The Statistic page shows you. \n
+    </string>
+
 
 </resources>

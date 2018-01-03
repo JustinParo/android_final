@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tingtingliu.projectassignment.Automobile.AutomobileRecordDetail">
+
+    <LinearLayout
+        android:id="@+id/recordDetailLiterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/litersRecordDetialInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/literLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/litersRecordDetailInfo"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recordDetailPriceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/recordDetailLiterContainer">
+
+        <TextView
+            android:id="@+id/priceRecordDetailInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/priceLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/priceRecordDetailInfo"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recordDetailKmContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/recordDetailPriceContainer">
+
+        <TextView
+            android:id="@+id/kmRecordDetailInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/kmLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/kmRecordDetailInfo"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/aDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aDeleteButton"
+        android:layout_above="@id/aBack"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#3D3D3D"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"/>
+
+    <Button
+        android:id="@+id/aBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aBackButton"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#3D3D3D"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"/>
+
+
+
+
+</RelativeLayout>

@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".foodnutrition.FoodNutritionActivity" />
         <activity android:name=".Automobile.AutomobileActivity" />
-        <activity android:name=".Automobile.AutomobileRecordsFragment"></activity>
+        <activity android:name=".Automobile.AutomobileRecords" />
+        <activity android:name=".Automobile.AutomobileRecordDetail" />
+        <activity android:name=".Automobile.AutomobileStatistics"></activity>
     </application>
 
 </manifest>
