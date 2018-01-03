@@ -1,13 +1,20 @@
 package com.tingtingliu.projectassignment.Automobile;
 
+import android.app.AlertDialog;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.tingtingliu.projectassignment.R;
@@ -17,7 +24,6 @@ public class AutomobileActivity extends AppCompatActivity {
     FloatingActionButton newRecordFAB;
     FragmentManager fragmentManager = getFragmentManager();
     AutomobileNewRecordFragment newRecordFragment;
-    AutomobileRecordsFragment automobileRecordsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,15 +67,32 @@ public class AutomobileActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+            case R.id.home:
+                RelativeLayout view = (RelativeLayout) findViewById(R.id.rootLayout);
+                Snackbar.make(view, "Home", Snackbar.LENGTH_LONG).show();
+                break;
             case R.id.records:
                 Toast.makeText(AutomobileActivity.this, "Records", Toast.LENGTH_SHORT).show();
                 removeFragment();
-                automobileRecordsFragment = new AutomobileRecordsFragment();
-                fragmentManager.beginTransaction().replace(R.id.automobile_frame, automobileRecordsFragment)
-                        .addToBackStack(null).commit();
+                Intent intentRecords = new Intent(AutomobileActivity.this, AutomobileRecords.class);
+                startActivity(intentRecords);
                 break;
             case R.id.statistics:
-
+                Toast.makeText(AutomobileActivity.this, "Statictics", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(AutomobileActivity.this, AutomobileStatistics.class);
+                startActivity(intent);
+                break;
+            case R.id.help:
+                LayoutInflater inflater = getLayoutInflater();
+                LinearLayout rootView = (LinearLayout) inflater.inflate(R.layout.automobile_help_menu, null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(AutomobileActivity.this);
+                builder.setView(rootView)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                return;
+                            }
+                        }).show();
                 break;
         }
         return true;
